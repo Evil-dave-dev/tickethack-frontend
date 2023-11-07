@@ -56,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 10px 20px;
 }
+
 .purchase-row {
     display: flex;
     justify-content: space-between;
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
     margin: 0 20px;
 }
+
 .purchase-total {
     display: flex;
     justify-content: space-between;

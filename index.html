@@ -7,20 +7,47 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
+
   <body>
-    <div id="container">
-      <div id="header">
-        <span id="title">Tickethack</span>
-        <a id="link" href="">Cart</a>
-        <a id="link" href="">Bookings</a>
+    <header id="header">
+      <a href="#" id="logo">Tickethack</a>
+      <div class="links">
+        <a href="#" id="cart">cart</a>
+        <a href="#" id="bookings">bookings</a>
       </div>
+    </header>
+    <div class="container">
       <div id="subtitle">
         <h1>Explore the world effortlessly by train!</h1>
-        <h2>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h2>
+        <h2>
+          Compare, book and enjoy cheap prices for train tickets: your journey
+          starts on Tickethack.
+        </h2>
       </div>
       <div id="content">
-        <div class="booking">BOOKING</div>
-        <div class="console">CONSOLE</div>
+        <div class="searching-container">
+          <div class="input-content">
+            <div class="searching-cities">
+              <input
+                type="text"
+                id="searching-departure"
+                placeholder="departure"
+              />
+              <div class="separation"></div>
+              <input type="text" id="searching-arrival" placeholder="arrival" />
+            </div>
+            <input type="date" id="searching-date" />
+          </div>
+          <button id="searching-btn">search</button>
+        </div>
+        <div class="result-container">
+          <div class="row-content"></div>
+          <div class="notfound-content">
+            <img src="assets/notfound.png" alt="notfound" class="notfound" />
+            <div class="separation"></div>
+            <p>No trip found</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
