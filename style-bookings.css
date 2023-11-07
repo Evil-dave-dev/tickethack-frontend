@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+#logo  {
+    color: #29959c;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 233, 243);
+    height: 100%;
+    padding: 0 20px;
+}
+
+.bookings-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 70vw;
+}
+
+.mycart {
+    text-align: center;
+    padding: 10px 20px;
+}
+.bookings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bebebe;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.bookings-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 30px;
+}
+
+.separation {
+    background-color: #bebebe;
+    width: 200px;
+    height: 2px;
+}
+
+#tickethack-btn {
+    color: #29959c;
+}
