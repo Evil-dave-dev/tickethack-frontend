@@ -91,3 +91,29 @@ h1, h2, h3, h4, h5, h6 {
 #tickethack-btn {
     color: #29959c;
 }
+
+.empty {
+  
+    display: none;
+    
+  }
+  
+  .notempty {
+      background-color: lightgray;
+      height: 100%;
+      position: fixed;
+      top: 6vh;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+        align-items: center;
+  }
+
+.center {
+    background-color: #fff;
+}
+
+.center p {
+    margin: 30px 309px;
+}

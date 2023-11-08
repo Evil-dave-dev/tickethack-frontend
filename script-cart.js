@@ -4,7 +4,11 @@ fetch('http://localhost:3000/carts', {
   })
   .then (response => response.json())
   .then (data => {
-    
+   
+    if (data.length === 0) {
+      const div = document.querySelector('.empty')
+      div.classList.toggle('notempty')}
+      else {
    function supTrip() {
       let X = document.querySelectorAll('.delete');
       for (let i = 0; i < X.length; i++) {
@@ -40,7 +44,7 @@ fetch('http://localhost:3000/carts', {
        
     }
     
-   
+    }
   })
 
 
