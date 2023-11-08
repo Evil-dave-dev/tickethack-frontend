@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <link rel="stylesheet" href="style-cart.css" />
-    <script src="script-cart.js"></script>
+    
   </head>
   <body>
     <header id="header">
@@ -17,18 +17,16 @@
     </header>
     <div class="container">
       <div class="purchase-container">
+        <div id="purchase-container">
         <h4 class="mycart">My cart</h4>
-        <div class="purchase-row">
-          <p class="purchase-path">Paris > Lyon</p>
-          <p class="purchase-departure">20:09</p>
-          <p class="purchase-price">109€</p>
-          <span class="delete">&#215;</span>
-        </div>
+      </div>
+       
         <div class="purchase-total">
           <p>mon Total: <span id="total">109€</span></p>
           <a href="#" id="purchase-btn">purchase</a>
         </div>
       </div>
     </div>
+    <script src="script-cart.js"></script>
   </body>
 </html>
