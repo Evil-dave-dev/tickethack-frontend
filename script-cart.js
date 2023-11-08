@@ -1,3 +1,4 @@
+let totalCost = 0;
 fetch('http://localhost:3000/carts', {
     method: "GET",
   })
@@ -12,11 +13,17 @@ fetch('http://localhost:3000/carts', {
         this.parentNode.remove();
         fetch(`http://localhost:3000/carts/deleteOne/${data[i]._id}`, {
           method: "DELETE",
-    });
+    })
+    .then(() => {
+      totalCost -= data[i].price
+      document.querySelector('#total').textContent = totalCost; 
+    })
+   
       })
     }
+    
     }
-    let totalCost = 0;
+    
     for (let i = 0; i < data.length; i++) {
       document.querySelector('#purchase-container').innerHTML += `
       <div class="purchase-row">
@@ -26,13 +33,14 @@ fetch('http://localhost:3000/carts', {
           <span class="delete">&#215;</span>
         </div>`
         supTrip();
+       totalCost += data[i].price
+       document.querySelector('#total').textContent = totalCost; 
         
-        totalCost += data[i].price
-        console.log(totalCost)
-       // totalCost += document.querySelectorAll('.purchase-price');
+        
+       
     }
-
-    document.querySelector('#total').textContent = totalCost;
+    
+   
   })
 
 
