@@ -96,16 +96,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.empty-container {
+.empty {
+  
+  display: none;
+  
+}
+
+.notempty {
     background-color: lightgray;
-  height: 100%;
-  position: fixed;
-  top: 6vh;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-    align-items: center;
+    height: 100%;
+    position: fixed;
+    top: 6vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+      align-items: center;
 }
 
 .center {

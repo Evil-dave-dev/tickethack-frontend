@@ -13,13 +13,15 @@ function book() {
         .then((response) => response.json())
         .then((data) => {
           // ajout de la data.trips dans la new cart
-          fetch("http://localhost:3000/cart", {
+          //console.log(data)
+          fetch(`http://localhost:3000/carts/newCart`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data.trips),
           })
             .then((response) => response.json())
             .then((data) => console.log(data));
+        
         });
     });
   });
